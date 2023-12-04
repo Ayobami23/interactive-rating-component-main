@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Montserrat:wght@400;700&family=Overpass:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --Mobile: 375px;
+  --Desktop: 1440px;
+  --Orange: hsl(25, 97%, 53%);
+  --Font-size-paragraph: 15px;
+  --Family: Overpass;
+  --Weight1: 400;
+  --Weight2: 700;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Very-Dark-Blue);
+}
+
+.content {
+  background: hsl(214, 30%, 11%);
+  width: 450px;
+  height: 450px;
+  border-radius: 40px;
+  padding: 40px;
+  font-family: var(--Family);
+  color: var(--White);
+  line-height: 2.5;
+}
+
+.content .star {
+  background: var(--Dark-Blue);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.content p {
+  line-height: 1.5;
+  color: var(--Medium-Grey);
+  font-weight: var(--Weight1);
+  font-size: var(--Font-size-paragraph);
+}
+
+.content .inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.content .inputs span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: var(--Medium-Grey);
+  background: var(--Dark-Blue);
+  cursor: pointer;
+}
+
+.content .inputs span:hover {
+  color: var(--White);
+  background: var(--Orange);
+}
+
+.content .inputs {
+  color: var(--Light-Grey);
+}
+
+.content button {
+  width: 100%;
+  background: var(--Orange);
+  color: var(--White);
+  outline: none;
+  border: none;
+  padding: 20px 0;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: var(--Weight2);
+  text-align: center;
+  cursor: pointer;
+}
+
+.content button:hover {
+  color: var(--Orange);
+  background: var(--White);
+}
+
+.modal {
+  background: hsl(214, 30%, 11%);
+  width: 450px;
+  height: 450px;
+  border-radius: 40px;
+  padding: 40px;
+  font-family: var(--Family);
+  color: var(--White);
+  line-height: 2.5;
+  display: none;
+}
+
+.modal img {
+  display: grid;
+  margin: auto;
+}
+
+.modal .selected {
+  text-align: center;
+  background: var(--Dark-Blue);
+  border-radius: 50px;
+  width: 200px;
+  margin: 25px auto;
+  color: var(--Orange);
+}
+
+.modal h1 {
+  text-align: center;
+}
+
+.modal p {
+  line-height: 1.5;
+  text-align: center;
+  color: var(--Medium-Grey);
+}
